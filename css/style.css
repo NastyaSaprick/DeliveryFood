@@ -1,0 +1,498 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    padding-top: 44px;
+}
+/*общее*/
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+.input{
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px;
+    padding-left: 35px;
+}
+/*голова*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.input__address{
+flex: 0.8;
+background: url(../img/header/home.svg) no-repeat left 11px center;
+}
+.button{
+padding:8px 16px;
+background: #FFFFFF;
+border: 1px solid #D9D9D9;
+box-sizing: border-box;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.0015);
+border-radius: 2px;
+color: #595959;
+font-size: 16px;
+line-height: 24px;
+}
+.button__primaty{
+    background: #1890FF;
+    border: 1px solid #1890FF;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+.button-icon{
+    padding-right: 6px;
+    vertical-align: middle;
+}
+.button__text{
+    vertical-align: middle;
+}
+/*промо*/
+.main{
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
+.promo{
+    box-shadow: 0px 7px 12px rgba(158, 158, 163, 0.1);
+    background: #FFF1B8 url(../img/promo/promo-pizza.png)no-repeat top right -100px /600px;
+    border-radius: 10px;
+    padding: 68px 70px; 
+    margin-bottom: 56px;
+}
+.section__heading{
+    display: flex;
+    align-items:center;
+    padding-bottom: 44px;
+}
+.section__title{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+    margin-right: 30px;
+
+}
+.promo__title{
+font-weight: bold;
+font-size: 39px;
+line-height: 46px;
+color: #302C34;
+margin: 0;
+}
+.promo__text{
+    max-width: 538px;
+    font-size: 24px;
+    line-height: 28px;
+}
+.search__input{
+    background: url(../img/restaurants/search.svg) no-repeat left 11px center;
+    width: 300px;
+    margin-left: auto;
+}
+   /*карточки*/
+   .cards{
+       display: flex;
+       flex-wrap: wrap;
+       align-items:flex-start;
+       justify-content: space-between;
+   }
+   .card{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 7px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    flex-basis: 32%;
+    text-decoration: none;
+   }
+   .card-imege{
+    width: 384px;
+    height: 250px;
+    object-fit: cover;
+   }
+   .card-texr{
+       padding-top: 20px;
+       padding-bottom: 35px;
+       padding-left: 23px;
+       padding-right: 24px;
+   }
+   .card-heading{
+       display: flex;
+       align-items:center;
+       justify-content: space-between;
+   }
+   .card-title{
+    margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000; 
+   }
+   .card-tag{
+    font-size: 12px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    background: #262626;
+    border-radius: 2px;
+    padding: 1px 8px;
+   }
+   .card-info{
+       display: flex;
+       align-items:center;
+       flex-wrap: wrap;
+   }
+   .rating{
+       padding-right: 26px;
+       font-weight: bold;
+       font-size: 18px;
+       line-height: 32px;
+       color: #FFC107;
+   }
+   .price , .category{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    color: #8C8C8C;
+   }
+   .price{
+       padding-right: 10px; 
+   }
+   .price::after{
+       content:"";
+       width: 5px;
+       height: 5px;
+       background: #8C8C8C;
+       display: inline-block;
+       border-radius:50%;
+       vertical-align: middle;
+       margin-left: 10px;
+   }
+   .category{
+       text-overflow: ellipsis;
+       overflow: hidden;
+       white-space: nowrap;
+       max-width:150px;
+   }
+ /*footer*/
+ .footer{
+     padding: 60px 0px;
+ }
+ .footer__block{
+     display: flex;
+     align-items: center;
+     justify-content:space-between;
+ }  
+ .footer__nav{
+     margin-right: auto;
+     margin-left: 35px;
+ }
+ .footer__link{
+     display: inline-block;
+     color: #595959;
+     text-decoration: none;
+     font-weight: normal;
+     font-size: 18px;
+     line-height: 21px;
+ }
+ .footer__link:not(:last-child){
+     margin-right: 15px;
+ }
+ .social-links{
+     display: flex;
+     align-items: center;
+ }
+ .social-link:not(:last-child){
+     margin-right: 21px;
+ }
+
+ /*адоптация */
+ @media (max-width:1366px){
+.container{
+    max-width: 960px;
+}
+.promo{
+    background-position: top right -60px;
+    background-size:400px;
+}
+ }
+ @media(max-width:992px){
+    .container{
+        max-width: 750px;
+    }
+    .promo{
+        padding: 50px;
+        background-position: top right -80px;
+        background-size:300px;
+    }
+    .promo__text{
+        font-size: 20px;
+    }
+    .card{
+        flex-basis: 49%;
+    }
+    .footer__link{
+        font-size: 16px;
+    }
+ }
+ @media(max-width:768px){
+    .container{
+        max-width: 560px;
+    }
+    .header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+    }
+    .input{
+        flex: 1;
+    }
+    .button{
+        margin-top: 20px;
+    }
+    .promo__title{
+        font-size: 26px;
+        line-height: 24px;
+    }
+    .promo__text{
+        font-size: 14px;
+        max-width: 300px;
+        line-height: 20px;
+    }
+    .card-info{
+        flex-wrap: wrap;
+    }
+    .card .rating{
+        flex-basis: 100%;
+    }
+    .card-title{
+        font-size: 18px;
+    }
+ }
+ @media(max-width:578px){
+.container{
+    width: 90%;
+}
+.header{
+    justify-content:space-between;
+}
+.input__address{
+    order: 5;
+    margin-top: 15px;
+    flex: 1;
+}
+.promo{
+    background-image: none;
+}
+.section__title{
+    font-size: 24px;
+}
+.card{
+    flex-basis: 100%;
+}
+.card-imege{
+    width: 100%;
+}
+.footer__nav{
+    order: 0;
+}
+.footer__logo{
+    order: 1;
+}
+.social-links{
+    order: 2;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+ }
+ @media(max-width:480px){
+     .promo{
+         padding: 20px;
+         padding-bottom: 20px;
+     }
+     .button__text{
+         display: none;
+     }
+     .promo__title{
+         font-size: 20px;
+         text-align: center;
+     }
+     .promo__text{
+        text-align: center;
+     }
+     .section__heading{
+         flex-wrap: wrap;
+         align-items: center;
+         justify-content:space-around;
+     }
+     .footer__block{
+         flex-direction: column;
+         align-items: center;
+     }
+     .footer__logo{
+        order: 0;
+        margin-bottom: 20px;
+    }
+    .footer__nav{
+        margin-bottom: 20px;
+         align-items: center;
+         text-align: center;
+     }
+ }
+
+ /*страница Тануки*/
+ /*промо*/
+ .card-title-reg{
+     font-weight:400;
+ }
+ .ingredients{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #8C8C8C;
+    padding-top: 10px;
+ }
+ .card-buttons{
+     margin-top: 24px;
+     display: flex;
+     align-items: center;
+ }
+ .card-price-bold{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000;
+    margin-left: 32px;
+ }
+ .restaurants-card-imege{
+     align-items: center;
+     width: 100%;
+ }
+ /*модальное окно*/
+ .modal{
+     position: fixed;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100% ;
+     background: rgba(0, 0, 0, 0.4);
+     display: none;
+ }
+ .is-open{
+    display: flex;
+}
+ .modal-header{
+     display: flex;
+     justify-content:space-between;
+     align-items:center;
+     margin-bottom: 45px;
+ }
+ .modal-dialog{
+    max-width: 780px;
+    width: 95%;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin: auto;
+    padding: 40px 45px;
+ }
+ .modal-title{
+     margin: 0;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 36px;
+     line-height: 42px;
+ }
+ .close{
+     font-size: 36px;
+     border:none;
+     background-color: transparent;
+ }
+ .foods-row{
+     display: flex;
+     align-items:flex-start;
+     justify-content:space-between;
+     padding-bottom: 8px;
+     border-bottom:1px solid #D9D9D9;
+     margin-bottom: 15px;
+ }
+ .food-name{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+ }
+ .food-price{
+     margin-left: auto;
+     margin-right: 47px;
+     font-weight: bold;
+     font-size: 20px;
+     line-height: 32px;
+ }
+ .food-counter{
+        display: flex;
+        align-items:center;
+ }
+ .counter-button{
+    background: #FFFFFF;
+    border: 1px solid #40A9FF;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 5px 16px;
+    color: #40A9FF;
+    font-size: 14px;
+    line-height: 22px;
+ }
+ .counter{
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 13px;
+    padding-right: 13px;
+ }
+ .modal-footer{
+     display: flex;
+     justify-content: space-between;
+     align-items:center;
+     margin-top: 52px;
+ }
+ .price-teg{
+    background: #262626;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FAFAFA;
+    padding: 15px 20px;
+ }
+ /*адоптация к модальному окну*/
+ @media(max-width:520px){
+    .food-name{
+       font-size: 16px;
+       line-height: 20px;
+       text-overflow: ellipsis;
+       overflow: hidden;
+       white-space: nowrap;
+       max-width: 50px;
+    }
+    .food-price{
+       font-size: 16px;
+       line-height: 20px;
+       margin-right: 30px;
+    }
+    .counter-button{
+        padding: 2px 7px;
+    }
+    .modal-footer{
+        flex-direction: column;     
+        align-items:center;
+        text-align: center;
+    }
+        }
+   
